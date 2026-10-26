@@ -1,0 +1,140 @@
+{
+  "trained_at": "2026-10-22 01:02:19",
+  "training_seconds": 10.6,
+  "n_total": 287161,
+  "n_train": 229728,
+  "n_test": 57433,
+  "accuracy": 0.9901450385666777,
+  "majority_baseline": 0.8068357912698274,
+  "class_names": [
+    "Normal Activity",
+    "Brute Force Attack",
+    "Port Scanning",
+    "Suspicious Attack"
+  ],
+  "test_distribution": {
+    "Normal Activity": 46339,
+    "Brute Force Attack": 239,
+    "Port Scanning": 3933,
+    "Suspicious Attack": 6922
+  },
+  "report": {
+    "Normal Activity": {
+      "precision": 0.9983682172229232,
+      "recall": 0.9902457972765921,
+      "f1-score": 0.994290419388739,
+      "support": 46339.0
+    },
+    "Brute Force Attack": {
+      "precision": 0.39593908629441626,
+      "recall": 0.9790794979079498,
+      "f1-score": 0.563855421686747,
+      "support": 239.0
+    },
+    "Port Scanning": {
+      "precision": 0.9914206409285895,
+      "recall": 0.9989829646580218,
+      "f1-score": 0.9951874366767984,
+      "support": 3933.0
+    },
+    "Suspicious Attack": {
+      "precision": 0.9855428654040769,
+      "recall": 0.9848309737070211,
+      "f1-score": 0.9851867909531036,
+      "support": 6922.0
+    },
+    "accuracy": 0.9901450385666777,
+    "macro avg": {
+      "precision": 0.8428177024625014,
+      "recall": 0.9882848083873963,
+      "f1-score": 0.8846300171763469,
+      "support": 57433.0
+    },
+    "weighted avg": {
+      "precision": 0.9938397672873883,
+      "recall": 0.9901450385666777,
+      "f1-score": 0.9914634503728716,
+      "support": 57433.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      45887,
+      319,
+      34,
+      99
+    ],
+    [
+      5,
+      234,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      3929,
+      1
+    ],
+    [
+      68,
+      37,
+      0,
+      6817
+    ]
+  ],
+  "feature_importance": {
+    "Destination_Port": 0.20095698589177385,
+    "Flow_Duration": 0.14721848845264984,
+    "Fwd_Packets": 0.13336851091835072,
+    "Bwd_Packets": 0.09350956617767205,
+    "Flow_Bytes_per_s": 0.11266420211945778,
+    "Flow_Packets_per_s": 0.10067305864941263,
+    "SYN_Flag_Count": 0.007803538095471354,
+    "Avg_Packet_Size": 0.20380564969521178
+  },
+  "global_shap": {
+    "Destination_Port": 0.07971607664148808,
+    "Flow_Duration": 0.04896508600966284,
+    "Fwd_Packets": 0.052382555213305045,
+    "Bwd_Packets": 0.048665523537573294,
+    "Flow_Bytes_per_s": 0.038437637545906955,
+    "Flow_Packets_per_s": 0.03584948805918539,
+    "SYN_Flag_Count": 0.0048168057539497156,
+    "Avg_Packet_Size": 0.10260797828492953
+  },
+  "baseline": {
+    "Destination_Port": {
+      "benign_median": 80.0,
+      "overall_median": 80.0
+    },
+    "Flow_Duration": {
+      "benign_median": 47526.0,
+      "overall_median": 49053.0
+    },
+    "Fwd_Packets": {
+      "benign_median": 2.0,
+      "overall_median": 2.0
+    },
+    "Bwd_Packets": {
+      "benign_median": 2.0,
+      "overall_median": 2.0
+    },
+    "Flow_Bytes_per_s": {
+      "benign_median": 4073.2517570072,
+      "overall_median": 4462.425878
+    },
+    "Flow_Packets_per_s": {
+      "benign_median": 82.74036075,
+      "overall_median": 78.37067370335001
+    },
+    "SYN_Flag_Count": {
+      "benign_median": 0.0,
+      "overall_median": 0.0
+    },
+    "Avg_Packet_Size": {
+      "benign_median": 78.75,
+      "overall_median": 76.46666667
+    }
+  }
+}

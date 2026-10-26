@@ -1,0 +1,12 @@
+# XAI-SOC runtime and test dependencies.
+# Minimum versions are listed so the file works on different machines.
+# For an exact record of your environment run:  pip freeze > requirements.lock.txt
+flask>=3.0
+flask-login>=0.6
+werkzeug>=3.0
+scikit-learn>=1.3
+pandas>=2.0
+numpy>=1.24
+joblib>=1.3
+shap>=0.44
+pytest>=8.0
